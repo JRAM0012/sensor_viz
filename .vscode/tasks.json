@@ -3,22 +3,24 @@
         {
             "type": "cppbuild",
             "label": "C/C++: gcc.exe build active file",
-            "command": "C:\\raylib\\w64devkit\\bin\\gcc.exe",
+            "command": "C:\\raylib\\w64devkit\\bin\\make.exe",
             "args": [
-                "-fdiagnostics-color=always",
-                "-g",
-                "${file}",
-                "-o",
-                "${fileDirname}\\..\\bin\\sensor_viz.exe",
-                "-LC:\\raylib\\raylib\\src",
-                "-IC:\\raylib\\raylib\\examples\\shapes",
-                "-lraylib",
-                "-lgdi32",
-                "-lopengl32",
-                "-lwinmm",
+                "-f",
+                "C:/Users/jayar/source/sensor_viz/Makefile"
+                // "-fdiagnostics-color=always",
+                // "-g",
+                // "${file}",
+                // "-o",
+                // "${fileDirname}\\..\\bin\\sensor_viz.exe",
+                // "-LC:\\raylib\\raylib\\src",
+                // "-IC:\\raylib\\raylib\\examples\\shapes",
+                // "-lraylib",
+                // "-lgdi32",
+                // "-lopengl32",
+                // "-lwinmm",
             ],
             "options": {
-                "cwd": "${fileDirname}"
+                "cwd": "C:/Users/jayar/source/sensor_viz/"
             },
             "problemMatcher": [
                 "$gcc"

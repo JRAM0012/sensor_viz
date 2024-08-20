@@ -3,3 +3,4 @@ obj\*
 *.exe
 .ipynb_checkpoints
 *.blend1
+*.d

@@ -41,7 +41,6 @@ int main()
     
     model.materials[0].maps[MATERIAL_MAP_DIFFUSE].texture = texture;
     Vector3 angle = (Vector3) { 0.0f, 0.0f, 0.0f };
-    float x = TextToFloat("1.2");
     Vector3 tempf3;
 
     while(!WindowShouldClose())
@@ -96,7 +95,7 @@ int main()
         }
         // https://youtu.be/RZd6XDx5VXo?t=764 Accelerometers and Gyroscopes - Sensor Fusion #1, Phil's Lab #33
         // https://youtu.be/p7tjtLkIlFo?t=428 How to Compute Roll and Pitch From Accelerometers, MicWro Engr
-        angle.x = asinf(tempf3.x / -9.8f);
+        angle.x = asinf(tempf3.x);
         angle.y = 0.0f;
         angle.z = atan2f(tempf3.y, tempf3.z);
         if(isnan(angle.x)) angle.x = 0.0f;

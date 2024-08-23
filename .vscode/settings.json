@@ -3,6 +3,7 @@
         "raylib.h": "c",
         "raygui.h": "c",
         "animator.h": "c",
-        "utils.h": "c"
+        "utils.h": "c",
+        "raymath.h": "c"
     }
 }
